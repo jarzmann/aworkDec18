@@ -17,6 +17,9 @@
 			"@services": [
 				"src/app/shared/services"
 			],
+			"@services/*": [
+				"src/app/shared/services/*"
+			],
 			"@components": [
 				"src/app/shared/components"
 			],
@@ -28,6 +31,9 @@
 			],
 			"@pages": [
 				"src/app/shared/pages"
+			],
+			"@images": [
+				"src/assets/img"
 			],
     },
     "lib": [
