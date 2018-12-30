@@ -15,7 +15,7 @@ import { MatButtonModule, MatCheckboxModule } from '@angular/material';
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
-  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,BrowserAnimationsModule, MatButtonModule, MatCheckboxModule],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule, MatButtonModule, MatCheckboxModule],
   providers: [
     StatusBar,
     SplashScreen,
