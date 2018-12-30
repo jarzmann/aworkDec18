@@ -33,9 +33,11 @@ import {
   MatTabsModule,
   MatIconModule
 } from '@angular/material';
+import { PublicComponent } from './pages/public/public.component';
+import { PrivateComponent } from './pages/private/private.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, PublicComponent, PrivateComponent],
   entryComponents: [],
   imports: [
     BrowserModule,

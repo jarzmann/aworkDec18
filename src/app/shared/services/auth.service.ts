@@ -133,7 +133,7 @@ export class AuthService {
         if (!this.afAuth.auth.currentUser.emailVerified) {
           this.alertService.showToaster('Your email has not been verified');
           // redirect to email verification page
-          this.router.navigate(['/home']);
+          this.router.navigate(['/verify-mail']);
         } else {
           this.router.navigate(['/home']);
           this.afAuth.auth.currentUser.getIdToken().then((token: string) => (this.token = token));
@@ -141,7 +141,6 @@ export class AuthService {
         }
       })
       .catch(error => this.alertService.showToaster(error));
-    console.log('verified?: ', this.afAuth.auth.currentUser.emailVerified);
   }
 
   public signInAnonymous(): Promise<void> {
