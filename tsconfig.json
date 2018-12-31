@@ -13,32 +13,25 @@
     "typeRoots": [
       "node_modules/@types"
     ],
-    "paths": {
-			"@services": [
-				"src/app/shared/services"
-			],
-			"@services/*": [
-				"src/app/shared/services/*"
-			],
-			"@components": [
-				"src/app/shared/components"
-			],
-			"@models": [
-				"src/app/shared/models"
-			],
-			"@pipes": [
-				"src/app/shared/pipes"
-			],
-			"@pages": [
-				"src/app/shared/pages"
-			],
-			"@images": [
-				"src/assets/img"
-			],
-    },
     "lib": [
       "es2018",
       "dom"
-    ]
-  }
+		],
+		"paths": {
+			"@services": ["src/app/shared/services"],
+			"@components": ["src/app/shared/components"],
+			"@models": ["src/app/shared/models"],
+			"@pipes": ["src/app/shared/pipes"],
+			"@privpages": ["src/app/shared/pages/private"],
+			"@images": ["src/assets/img"],
+			"@services/*": ["src/app/shared/services/*"],
+			"@components/*": ["src/app/shared/components/*"],
+			"@models/*": ["src/app/shared/models/*"],
+			"@pipes/*": ["src/app/shared/pipes/*"],
+      "@images/*": ["src/assets/img/*"],
+      "@privpages/*": ["src/app/shared/pages/private/*"],
+
+		}
+
+  },
 }

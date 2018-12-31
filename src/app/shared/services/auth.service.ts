@@ -135,7 +135,7 @@ export class AuthService {
           // redirect to email verification page
           this.router.navigate(['/verify-mail']);
         } else {
-          this.router.navigate(['/home']);
+          this.router.navigate(['/private/dashboard']);
           this.afAuth.auth.currentUser.getIdToken().then((token: string) => (this.token = token));
           this.alertService.showToaster('Login succesful');
         }
